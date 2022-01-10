@@ -1,0 +1,45 @@
+{
+  "name": "awesomeproject",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@expo-google-fonts/lato": "^0.2.0",
+    "@expo-google-fonts/oswald": "^0.2.0",
+    "add": "^2.0.6",
+    "expo-font": "^10.0.4",
+    "expo-modules-core": "^0.6.4",
+    "expo-status-bar": "^1.2.0",
+    "react": "17.0.2",
+    "react-native": "^0.66.4",
+    "react-native-paper": "^4.11.1",
+    "react-native-svg": "^12.1.1",
+    "react-native-svg-transformer": "^1.0.0",
+    "react-native-vector-icons": "^9.0.0",
+    "styled-components": "^5.3.3",
+    "yarn": "^1.22.17"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^3.0.1",
+    "babel-jest": "^26.6.3",
+    "eslint": "^8.6.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "prettier": "^2.5.1",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
