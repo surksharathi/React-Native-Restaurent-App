@@ -8,7 +8,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { SafeArea } from "./src/components/utlity/safe-area.component";
 import Icon from 'react-native-vector-icons/FontAwesome';
-
+import {RestaurantsContextProvider} from './src/services/restaurants/restaurants.context';
 function MapScreen() {
   return (
     <SafeArea >
@@ -44,8 +44,8 @@ export default function App() {
   }
   return (
     <>
-     
-      <ThemeProvider theme={theme}>
+     <ThemeProvider theme={theme}>
+        <RestaurantsContextProvider>
         <NavigationContainer>
           <Tab.Navigator
             screenOptions={createScreenOption }
@@ -59,6 +59,7 @@ export default function App() {
         <Tab.Screen name="Settings" component={SettingsScreen} />
       </Tab.Navigator>
        </NavigationContainer>
+       </RestaurantsContextProvider>
       </ThemeProvider>
      
     </>
