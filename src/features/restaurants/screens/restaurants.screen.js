@@ -3,7 +3,7 @@
 import React,{useContext} from "react";
 import { Searchbar,ActivityIndicator, Colors  } from "react-native-paper";
  import styled from "styled-components/native";
-import {  FlatList, } from "react-native";
+import {  FlatList, Pressable} from "react-native";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 import { Spacer } from '../../../components/spacer/spacer.components';
 import { SafeArea } from "../../../components/utlity/safe-area.component";
@@ -38,9 +38,16 @@ export const RestaurantsScreen = ( { navigation } ) => {
       <RestaurantList
         data={restaurants}
         renderItem={({ item }) => (
+          <Pressable onPress={() =>
+            navigation.navigate("RestaurantDetail", {
+              restaurant: item,
+            })
+          }
+          >
           <Spacer position="bottom" size="large">
             <RestaurantInfoCard restaurant={item} />
-          </Spacer>
+            </Spacer>
+            </Pressable>
         )}
         keyExtractor={( item ) => item.name}
       />
