@@ -5,6 +5,7 @@ import { Text} from 'react-native';
 import { RestaurantsNavigator } from "./restaurants.navigator";
 import { SafeArea } from "../../components/utlity/safe-area.component";
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { MapScreen } from "../../features/map/screens/map.screen";
 //import { RestaurantsScreen } from "../../features/restaurants/screens/restaurants.screen";
 const Tab = createBottomTabNavigator();
 const TAB_ICON = {
@@ -14,13 +15,13 @@ const TAB_ICON = {
 };
 
 
-function MapScreen() {
-  return (
-    <SafeArea >
-      <Text>MapScreen</Text>
-    </SafeArea>
-  );
-}
+// function MapScreen() {
+//   return (
+//     <SafeArea >
+//       <Text>MapScreen</Text>
+//     </SafeArea>
+//   );
+// }
 
 function SettingsScreen() {
   return (
